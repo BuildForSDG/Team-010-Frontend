@@ -6,8 +6,8 @@ export const Typography = Styled.p`
   align-items: flex-start;
   justify-content: flex-start;
   font-family: Playfair Display;
-  font-size: 14px;
-  line-height: 6px;
+  font-size: 18px;
+  line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
   text-transform: none;
