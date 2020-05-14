@@ -11,6 +11,6 @@ export const InputField = Styled.input`
   color: rgba(3, 3, 3, 1);
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  border: 1px solid orange;
+  border: 1px solid orange
   background-color: rgba(255, 255, 255, 1);
 `;

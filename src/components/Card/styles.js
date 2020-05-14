@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Styled from 'styled-components';
+=======
+import Styled from "styled-components";
+>>>>>>> Landingpage
 
 export const Card = Styled.div`
   display: flex;
@@ -7,6 +11,7 @@ export const Card = Styled.div`
   align-items: center;
   flex-shrink: 1;
   flex-grow: 1;
+<<<<<<< HEAD
   margin: 10px;
   padding: 10px 10px 10px 10px;
   border-radius: 0px;
@@ -16,4 +21,11 @@ export const Card = Styled.div`
   align-self: initial;
   margin: 10px;
   padding: 10px 10px 10px 10px;
+=======
+  align-self: initial;
+  margin: 10px;
+  padding: 10px 10px 10px 10px;
+  
+  
+>>>>>>> Landingpage
 `;

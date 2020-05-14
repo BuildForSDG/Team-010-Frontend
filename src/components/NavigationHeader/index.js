@@ -66,5 +66,4 @@ export default ({ children, ...props }) => (
       </Stack>
     
   </Header>
-  
 );

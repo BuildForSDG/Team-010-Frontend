@@ -1,5 +1,4 @@
-
-import React from "react";
+import React from 'react';
 import { InputField } from "./styles";
 
 export default (props) => (

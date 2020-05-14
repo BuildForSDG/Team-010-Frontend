@@ -5,6 +5,7 @@ import logo from './assets/logo.svg';
 import './App.css';
 import login from './pages/login';
 import homepage from './pages/homepage';
+import containers from './containers';
 
 const App = () => (
   <BrowserRouter>
