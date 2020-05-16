@@ -16,8 +16,12 @@ export const Typography = Styled.p`
   text-align: left;
   text-transform: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: orange;
 =======
   color: rgba(3, 3, 3, 1);
 >>>>>>> Landingpage
+=======
+  color: orange;
+>>>>>>> More Work on market page
 `;

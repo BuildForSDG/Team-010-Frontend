@@ -1,4 +1,5 @@
 import React from 'react';
+import NavigationHeader from '../../components/NavigationHeader';
 import Paragraph from '../../components/Paragraph';
 import Row from '../../components/Row';
 import { Link } from 'react-router-dom';

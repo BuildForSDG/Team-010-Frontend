@@ -9,6 +9,10 @@ import NavigationHeader from '../../components/NavigationHeader';
 import Paragraph from '../../components/Paragraph';
 import Row from '../../components/Row';
 import Stack from '../../components/Stack';
+<<<<<<< HEAD
+=======
+import Icon from '../../components/Icon';
+>>>>>>> More Work on market page
 import InputField from '../../components/InputField';
 import NavigationFooter from '../../components/NavigationFooter';
 import Select from '../../components/Select';
