@@ -11,5 +11,5 @@ export const Typography = Styled.p`
   letter-spacing: 0px;
   text-align: left;
   text-transform: none;
-  color: rgba(3, 3, 3, 1);
+  color: orange;
 `;

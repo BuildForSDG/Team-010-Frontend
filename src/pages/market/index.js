@@ -1,60 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../components/Button';
-import Card from '../components/Card';
-import Image from '../components/Image';
-import Main from '../components/Main';
-import NavigationHeader from '../components/NavigationHeader';
-import Paragraph from '../components/Paragraph';
-import Row from '../components/Row';
-import Stack from '../components/Stack';
-import Icon from '../components/Icon';
-import InputField from '../components/InputField';
-import NavigationFooter from '../components/NavigationFooter';
-import Select from '../components/Select';
+import Button from '../../components/Button';
+import Card from '../../components/Card';
+import Image from '../../components/Image';
+import Main from '../../components/Main';
+import NavigationHeader from '../../components/NavigationHeader';
+import Paragraph from '../../components/Paragraph';
+import Row from '../../components/Row';
+import Stack from '../../components/Stack';
+import Icon from '../../components/Icon';
+import InputField from '../../components/InputField';
+import NavigationFooter from '../../components/NavigationFooter';
+import Select from '../../components/Select';
 
 export default () => (
   <Main style={{ justifyContent: 'center', alignItems: 'center' }}>
-    <NavigationHeader>
-      <Row style={{ flexGrow: '0', minWidth: '50px', minHeight: '50px' }}>
-        <Link to="/">
-          {' '}
-          <Paragraph>Farm Hub</Paragraph>
-        </Link>
-        <Link to="/">
-          {' '}
-          <Paragraph>Sell</Paragraph>
-        </Link>
-        <Link to="/">
-          {' '}
-          <Paragraph>Contact</Paragraph>
-        </Link>
-      </Row>
-
-      <Stack
-        style={{
-          justifyContent: 'flex-end',
-          flexGrow: '0',
-          minWidth: '50px',
-          minHeight: '50px'
-        }}
-      >
-        <Row>
-          <Link to="/">
-            <Icon liga="shopping-cart" />{' '}
-          </Link>
-          <Link to="/">
-            {' '}
-            <Paragraph>SignIn</Paragraph>
-          </Link>
-          <Link to="/">
-            {' '}
-            <Paragraph>SignUp</Paragraph>
-          </Link>
-        </Row>
-      </Stack>
-    </NavigationHeader>
+    <NavigationHeader>  </NavigationHeader>
     <Stack style={{ minWidth: '50px', minHeight: '50px' }}>
       <Row
         style={{
@@ -64,31 +26,16 @@ export default () => (
           minHeight: '50px'
         }}
       >
-        <Select id="Categories">
+        <Select id="Categories" placeholder="Categories">
           <option value="" style={{ fontSize: '15px' }}>
-            Cateories
+            All Categories
           </option>
-
           <option value="Grains" style={{ fontSize: '15px' }}>
-            Grains
+            Perishable
           </option>
           <option value="Vegetables" style={{ fontSize: '15px' }}>
-            Vegetables
+            Unperishable
           </option>
-          <option value="Pepper" style={{ fontSize: '15px' }}>
-            Pepper
-          </option>
-          <option value="Yams" style={{ fontSize: '15px' }}>
-            Yams
-          </option>
-          <option value="Fruits" style={{ fontSize: '15px' }}>
-            Fruits
-          </option>
-          <option value="Tomatoes" style={{ fontSize: '15px' }}>
-            Tomatoes
-          </option>
-
-          <option value="Other">Other</option>
         </Select>
         <Row
           style={{
@@ -99,7 +46,7 @@ export default () => (
           }}
         >
           {' '}
-          <InputField placeholder="search" style={{ width: '750px' }} />
+          <InputField placeholder="Find a Product" style={{ width: '750px' }} />
           <Button>Search</Button>
         </Row>
       </Row>
@@ -115,7 +62,7 @@ export default () => (
           style={{
             width: 'calc(100% - 20px)',
             height: '370px',
-            backgroundImage: 'url(/images/farm.jpg)'
+            backgroundImage: 'url(/images/categories/farm.jpeg)'
           }}
         />
       </Row>
@@ -145,7 +92,7 @@ export default () => (
                   style={{
                     width: '370px',
                     height: '180px',
-                    backgroundImage: 'url(/images/rice.jpg)'
+                    backgroundImage: 'url(/images/categories/rice.jpeg)'
                   }}
                 />
                 <Paragraph>Rice</Paragraph>
@@ -167,7 +114,7 @@ export default () => (
                   style={{
                     width: '370px',
                     height: '180px',
-                    backgroundImage: 'url(/images/beans.jpeg)'
+                    backgroundImage: 'url(/images/categories/beans.jpeg)'
                   }}
                 />
                 <Paragraph>Beans</Paragraph>
@@ -189,10 +136,10 @@ export default () => (
                   style={{
                     width: '370px',
                     height: '180px',
-                    backgroundImage: 'url(/images/water-melon.jpg)'
+                    backgroundImage: 'url(/images/categories/watermelon.jpeg)'
                   }}
                 />
-                <Paragraph>Water mellon</Paragraph>
+                <Paragraph>Water melon</Paragraph>
                 <Paragraph>Price</Paragraph>
               </Card>
             </Link>
@@ -223,10 +170,10 @@ export default () => (
                 style={{
                   width: '370px',
                   height: '180px',
-                  backgroundImage: 'url(/images/yam.jpg)'
+                  backgroundImage: 'url(/images/categories/yam.jpeg)'
                 }}
               />
-              <Paragraph>800 tubers of sweet Yam</Paragraph>
+              <Paragraph>Tubers of sweet Yam</Paragraph>
               <Paragraph>Price</Paragraph>
             </Card>
           </Link>
@@ -245,7 +192,7 @@ export default () => (
                 style={{
                   width: '370px',
                   height: '180px',
-                  backgroundImage: 'url(/images/toma.jpg)'
+                  backgroundImage: 'url(/images/categories/tomato.jpeg)'
                 }}
               />
               <Paragraph>Baskets of Tomatos</Paragraph>
@@ -267,54 +214,16 @@ export default () => (
                 style={{
                   width: '370px',
                   height: '180px',
-                  backgroundImage: 'url(/images/onions.jpg)'
+                  backgroundImage: 'url(/images/categories/onions.jpeg)'
                 }}
               />
-              <Paragraph>25 bags Onions</Paragraph>
+              <Paragraph>Bags of Onions</Paragraph>
               <Paragraph>Price</Paragraph>
             </Card>
           </Link>
         </Row>
       </Stack>
-      <NavigationFooter>
-        <Row>
-          <Stack>
-            <Link to="/">
-              {' '}
-              <Paragraph>About Us</Paragraph>
-            </Link>
-            <Link to="/">
-              {' '}
-              <Paragraph>Terms and conditions</Paragraph>
-            </Link>
-          </Stack>
-          <Stack>
-            <Link to="/">
-              {' '}
-              <Paragraph> Join Us</Paragraph>
-            </Link>
-            <Link to="/">
-              {' '}
-              <Paragraph>Join Us as a buyer</Paragraph>
-            </Link>
-            <Link to="/">
-              {' '}
-              <Paragraph>Join Us as a farmer</Paragraph>
-            </Link>
-            <Link to="/">
-              {' '}
-              <Paragraph>join us as a logistic partner</Paragraph>
-            </Link>
-          </Stack>
-          <Stack>
-            <Link to="/">
-              {' '}
-              <Paragraph> Contact Us</Paragraph>
-            </Link>
-            <Paragraph></Paragraph>
-          </Stack>
-        </Row>
-      </NavigationFooter>
+      <NavigationFooter>  </NavigationFooter>
     </Stack>
   </Main>
 );

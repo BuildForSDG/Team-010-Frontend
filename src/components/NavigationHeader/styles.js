@@ -7,9 +7,9 @@ export const Header = Styled.div`
   align-items: center;
   width: 100%;
   min-width: 100px;
-  min-height: 50px;
+  min-height: 100px;
   position: relative;
   z-index: 1;
   box-shadow: 0px 2px 10px 0px rgba(3, 3, 3, 0.1);
-  background-color: rgba(95, 173, 86, 1);
+  background-color: green;
 `;
