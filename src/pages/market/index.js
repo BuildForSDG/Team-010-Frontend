@@ -9,7 +9,6 @@ import NavigationHeader from '../../components/NavigationHeader';
 import Paragraph from '../../components/Paragraph';
 import Row from '../../components/Row';
 import Stack from '../../components/Stack';
-import Icon from '../../components/Icon';
 import InputField from '../../components/InputField';
 import NavigationFooter from '../../components/NavigationFooter';
 import Select from '../../components/Select';
