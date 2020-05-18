@@ -3,12 +3,10 @@ import './HomePage.css';
 import headerImgSm from '../../images/farmproduce-header-img-640.webp';
 import headerImgLg from '../../images/farmproduce-header-img-1073.webp';
 
-function scrollIntoView(id) {
-  const yCoord = document.getElementById(id).getBoundingClientRect().y;
-  window.scrollTo({
-    top: yCoord,
-    behavior: 'smooth'
-  });
+function toggleSidenav(ev) {
+  ev.preventDefault();
+  const sidenavs = document.querySelectorAll('.sidenav');
+  [...sidenavs].forEach((sidenav) => sidenav.classList.toggle('sidenav-hidden'));
 }
 
 export default function HomePage() {
@@ -17,7 +15,14 @@ export default function HomePage() {
       <nav className="flex-col">
         <ul className="flex-row flex-space-between ">
           <li className=" flex-row">
-            <button className="navmenu-toggle" aria-label="navigation menu icon" alt="nav mmenu icon"></button>
+            <button
+              onClick={(ev) => {
+                toggleSidenav(ev);
+              }}
+              className="navmenu-toggle"
+              aria-label="navigation menu icon"
+              alt="nav mmenu icon"
+            ></button>
           </li>
           <li className="flex-row navmenu-brandname_container">
             <a href="" className="flex-row flex-center navmenu-brandname">
@@ -25,7 +30,7 @@ export default function HomePage() {
             </a>
           </li>
         </ul>
-        <ul className="flex-col sitepages-links">
+        <ul className="flex-col sitepages-links sidenav sidenav-hidden">
           <li className="flex-row flex-center">
             <a href="">Link One</a>
           </li>
@@ -39,7 +44,7 @@ export default function HomePage() {
             <a href="">Contact</a>
           </li>
         </ul>
-        <ul className="flex-col authpages-links">
+        <ul className="flex-col authpages-links sidenav sidenav-hidden">
           <li className="flex-row flex-center">
             <a className="btn-primary-outline" href="">
               Sign in
