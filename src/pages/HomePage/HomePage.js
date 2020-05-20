@@ -1,71 +1,131 @@
 import React from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
+import * as Mat from 'materialize-css/dist/js/materialize.min';
 import './HomePage.css';
 import headerImgSm from '../../images/farmproduce-header-img-640.webp';
 import headerImgLg from '../../images/farmproduce-header-img-1073.webp';
 
-function toggleSidenav(ev) {
+function toggleMobileNav(ev) {
   ev.preventDefault();
-  const sidenavs = document.querySelectorAll('.sidenav');
-  [...sidenavs].forEach((sidenav) => sidenav.classList.toggle('sidenav-hidden'));
+  const mobileNav = document.querySelector('.mobile-nav');
+  mobileNav.classList.toggle('closed');
 }
 
 export default function HomePage() {
   return (
     <div>
-      <nav className="flex-col">
-        <ul className="flex-row flex-space-between ">
-          <li className=" flex-row">
+      <nav className="transparent flex-row-md">
+        <ul className="flex-row mr-auto">
+          <a href="#" class="brand-name ml-1 font-size-2 green-text text-darken-3 text-bolder">
+            Farmhub
+          </a>
+          <button
+            className="navmenu-toggle hide-on-med-and-up"
+            onClick={(ev) => {
+              toggleMobileNav(ev);
+            }}
+            aria-label="navigation menu icon"
+            alt="nav menu icon"
+          ></button>
+        </ul>
+        <ul className="hide-on-small-only flex-row align-center mr-1">
+          <li className="no-float pagelinks flex-row align-center">
+            <ul className="flex-row align-center">
+              <li className="no-float">
+                <a href="" className="green-text text-darken-3 text-bold font-size-1">
+                  Link One
+                </a>
+              </li>
+              <li className="no-float">
+                <a href="" className="green-text text-darken-3 text-bold font-size-1">
+                  Link Two
+                </a>
+              </li>
+              <li className="no-float">
+                <a href="" className="green-text text-darken-3 text-bold font-size-1">
+                  Link Three
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li className="no-float authlinks flex-row align-center ml-1">
+            <button className="btn-flat primary waves-effect green-text text-darken-3 mr-1">Sign in</button>
+            <button className="btn waves-effect white-text green darken-3">Sign up</button>
+          </li>
+        </ul>
+        <ul className="white flow-text mobile-nav closed z-depth-1">
+          <li className="no-float">
+            <a href="" className="green-text text-darken-3 text-bold  flow-text  font-size-1">
+              Link One
+            </a>
+          </li>
+          <div className="divider"></div>
+          <li className="no-float">
+            <a href="" className="green-text text-darken-3 text-bold  font-size-1">
+              Link Two
+            </a>
+          </li>
+          <div className="divider"></div>
+          <li className="no-float">
+            <a href="" className="green-text text-darken-3 text-bold  font-size-1">
+              Link Three
+            </a>
+          </li>
+          <div className="divider"></div>
+          <li className="no-float flex-x ">
+            <button className="btn-flat flex-x primary waves-effect green-text text-darken-3">Sign in</button>
+          </li>
+          <li className="no-float flex-x ">
+            <button className="btn flex-x waves-effect white-text green darken-3">Sign up</button>
+          </li>
+        </ul>
+        {/* <ul>
+          <li>
             <button
+              className="navmenu-toggle"
               onClick={(ev) => {
                 toggleSidenav(ev);
               }}
-              className="navmenu-toggle"
               aria-label="navigation menu icon"
-              alt="nav mmenu icon"
+              alt="nav menu icon"
             ></button>
           </li>
-          <li className="flex-row navmenu-brandname_container">
-            <a href="" className="flex-row flex-center navmenu-brandname">
-              Farmhub
-            </a>
+          <li>
+            <a href="">Farmhub</a>
           </li>
         </ul>
-        <ul className="flex-col sitepages-links sidenav sidenav-hidden">
-          <li className="flex-row flex-center">
+        <ul>
+          <li>
             <a href="">Link One</a>
           </li>
-          <li className="flex-row flex-center">
+          <li>
             <a href="">Link Two</a>
           </li>
-          <li className="flex-row flex-center">
+          <li>
             <a href="">Market</a>
           </li>
-          <li className="flex-row flex-center">
+          <li>
             <a href="">Contact</a>
           </li>
         </ul>
-        <ul className="flex-col authpages-links sidenav sidenav-hidden">
-          <li className="flex-row flex-center">
-            <a className="btn-primary-outline" href="">
-              Sign in
-            </a>
+        <ul>
+          <li>
+            <a href="">Sign in</a>
           </li>
-          <li className="flex-row flex-center">
-            <a className="btn-primary" href="">
-              Sign up
-            </a>
+          <li>
+            <a href="">Sign up</a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
       <header>
-        <section class="masthead" role="img" aria-label="Image Description">
+        <section role="img" aria-label="header image">
           <h1>The No. 1 connect for farmers and buyers</h1>
         </section>
       </header>
-      <main className="flex-col">
-        <article id="article_farmers" className="flex-col self-align-center">
+      <main>
+        <article id="article_farmers">
           <h3>For Farmers</h3>
-          <section className="flex-col self-align-center">
+          <section>
             <img src="https://picsum.photos/seed/picsum/300.webp" alt="an image of happy farmers on the farm" />
             <section>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque dolores tenetur dolorem esse quia
@@ -73,9 +133,9 @@ export default function HomePage() {
             </section>
           </section>
         </article>
-        <article id="article_buyers" className="flex-col self-align-center">
+        <article id="article_buyers">
           <h3>For Buyers</h3>
-          <section className="flex-col self-align-center">
+          <section>
             <img src="https://picsum.photos/seed/picsum/300.webp" alt="an image of happy buyers in the market" />
             <section>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aspernatur culpa minus, repellat
@@ -84,9 +144,9 @@ export default function HomePage() {
           </section>
         </article>
       </main>
-      <footer className="flex-col self-align-center">
+      <footer>
         <h4>Footer Heading</h4>
-        <p>
+        <p className="flow-text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quidem eius sapiente distinctio modi saepe
           libero.
         </p>
