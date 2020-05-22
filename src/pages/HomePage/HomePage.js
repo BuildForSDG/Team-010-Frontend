@@ -2,8 +2,8 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import * as Mat from 'materialize-css/dist/js/materialize.min';
 import './HomePage.css';
-import headerImgSm from '../../images/farmproduce-header-img-640.webp';
-import headerImgLg from '../../images/farmproduce-header-img-1073.webp';
+import headerImg from '../../images/happy-farmer.webp';
+import womanFarmer from '../../images/woman-watering-garden.webp';
 
 function toggleMobileNav(ev) {
   ev.preventDefault();
@@ -16,11 +16,11 @@ export default function HomePage() {
     <div>
       <nav className="transparent flex-row-md">
         <ul className="flex-row mr-auto">
-          <a href="#" class="brand-name ml-1 font-size-2 green-text text-darken-3 text-bolder">
+          <a href="#" className="brand-name ml-1 font-size-2 green-text text-darken-3 text-bolder">
             Farmhub
           </a>
           <button
-            className="navmenu-toggle hide-on-med-and-up"
+            className="navmenu-toggle"
             onClick={(ev) => {
               toggleMobileNav(ev);
             }}
@@ -28,7 +28,8 @@ export default function HomePage() {
             alt="nav menu icon"
           ></button>
         </ul>
-        <ul className="hide-on-small-only flex-row align-center mr-1">
+
+        <ul className="flex-row align-center mr-1 desktop-nav">
           <li className="no-float pagelinks flex-row align-center">
             <ul className="flex-row align-center">
               <li className="no-float">
@@ -49,10 +50,11 @@ export default function HomePage() {
             </ul>
           </li>
           <li className="no-float authlinks flex-row align-center ml-1">
-            <button className="btn-flat primary waves-effect green-text text-darken-3 mr-1">Sign in</button>
-            <button className="btn waves-effect white-text green darken-3">Sign up</button>
+            <button className="btn-flat primary waves-effect green-text text-darken-3 mr-1 font-size-1">Sign in</button>
+            <button className="btn waves-effect white-text green darken-3 font-size-1">Sign up</button>
           </li>
         </ul>
+
         <ul className="white flow-text mobile-nav closed z-depth-1">
           <li className="no-float">
             <a href="" className="green-text text-darken-3 text-bold  flow-text  font-size-1">
@@ -67,7 +69,7 @@ export default function HomePage() {
           </li>
           <div className="divider"></div>
           <li className="no-float">
-            <a href="" className="green-text text-darken-3 text-bold  font-size-1">
+            <a href="" className="green-text text-darken-3 text-bold font-size-1">
               Link Three
             </a>
           </li>
@@ -79,78 +81,67 @@ export default function HomePage() {
             <button className="btn flex-x waves-effect white-text green darken-3">Sign up</button>
           </li>
         </ul>
-        {/* <ul>
-          <li>
-            <button
-              className="navmenu-toggle"
-              onClick={(ev) => {
-                toggleSidenav(ev);
-              }}
-              aria-label="navigation menu icon"
-              alt="nav menu icon"
-            ></button>
-          </li>
-          <li>
-            <a href="">Farmhub</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">Link One</a>
-          </li>
-          <li>
-            <a href="">Link Two</a>
-          </li>
-          <li>
-            <a href="">Market</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">Sign in</a>
-          </li>
-          <li>
-            <a href="">Sign up</a>
-          </li>
-        </ul> */}
       </nav>
-      <header>
-        <section role="img" aria-label="header image">
-          <h1>The No. 1 connect for farmers and buyers</h1>
+
+      <header className="flex-row ">
+        <section className="header_sect-left section valign-wrapper">
+          <h1 className="white-text text-bold text-center px-4-lg">
+            The online platform that connects farmers with buyers
+          </h1>
+        </section>
+        <section className="header_sect-right mx-auto">
+          <img className="img-responsive" src={headerImg} alt="happy farmer" />
         </section>
       </header>
-      <main>
-        <article id="article_farmers">
-          <h3>For Farmers</h3>
-          <section>
-            <img src="https://picsum.photos/seed/picsum/300.webp" alt="an image of happy farmers on the farm" />
-            <section>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque dolores tenetur dolorem esse quia
-              explicabo!
-            </section>
+
+      <main className="section">
+        <section className="content-main-section align-center mx-1">
+          <section className="top-section-left section mx-1 px-4-lg">
+            <header className="text-bolder green-text darken-3 font-size-2">AS A FARMER</header>
+            <ol>
+              <li className="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+              <li className="flow-text">Lorem ipsum dolor sit amet consectetur elit</li>
+              <li className="flow-text">Lorem dolor sit amet consectetur adipisicing elit</li>
+            </ol>
+            <button className="btn-flat btn-lg  primary waves-effect green-text darken-3 font-size-1">
+              Get started as a farmer
+            </button>
           </section>
-        </article>
-        <article id="article_buyers">
-          <h3>For Buyers</h3>
-          <section>
-            <img src="https://picsum.photos/seed/picsum/300.webp" alt="an image of happy buyers in the market" />
-            <section>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aspernatur culpa minus, repellat
-              molestiae?
-            </section>
+          <section className="section mx-1 p-4-lg">
+            <header className="text-bold green-text darken-3 font-size-2">AS A BUYER</header>
+            <ol className="font-size-1">
+              <li className="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+              <li className="flow-text">Lorem ipsum dolor sit amet consectetur elit</li>
+              <li className="flow-text">Lorem dolor sit amet consectetur adipisicing elit</li>
+            </ol>
+            <button className="btn-flat btn-lg waves-effect primary green-text darken-3  font-size-1">
+              Get started as a buyer
+            </button>
           </section>
-        </article>
+        </section>
+        <section className="content-main-section section ">
+          <section className="valign-wrapper">
+            <img className="img-responsive" src={womanFarmer} alt="woman preparing cassava flour" />
+          </section>
+          <section className=" green darken-3 p-4-lg p-2 flex-col justify-center ">
+            <header className="white-text font-size-2 text-bold ">Lorem Ipsum</header>
+            <p className="white-text font-size-1pt1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem atque modi inventore aperiam eum
+              placeat, sint accusamus corporis at fuga praesentium similique illo in non? Excepturi officiis distinctio
+              voluptatibus.
+            </p>
+          </section>
+        </section>
       </main>
-      <footer>
-        <h4>Footer Heading</h4>
-        <p className="flow-text">
+      <footer className="green darken-3 p-4-lg p-1 flex-col justify-center align-center ">
+        <header className="white-text darken-3 text-bold font-size-1 ">Footer Heading</header>
+        <p className="white-text font-size-1">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quidem eius sapiente distinctio modi saepe
           libero.
         </p>
-        <small> #BuildForSDG TEAM 010. Facebook with Andela. &copy;{new Date().getFullYear()}</small>
+        <p className="white-text text-center">
+          #BuildForSDG TEAM 010. Facebook with Andela. &copy;{new Date().getFullYear()}
+        </p>
       </footer>
     </div>
   );
