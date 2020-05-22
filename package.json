@@ -24,7 +24,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "eject": "react-scripts eject",
     "test:cover": "npm run coverage && npm run coveralls",
-    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\"",
+    "lint": "eslint \"src/**/*.js\" --fix \"src/**/*.jsx\"",
     "check-styles": "npx stylelint '**/*.css'",
     "serve": "npm run build && node ./server.js"
   },

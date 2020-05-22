@@ -20,7 +20,9 @@ export const Toggle = Styled.div`
   border-radius: 6px;
   background-color: rgba(95, 173, 86, 1);
   
-  ${props => props.checked && `
+  ${(props) =>
+    props.checked &&
+    `
     display: block;
   `}
 `;

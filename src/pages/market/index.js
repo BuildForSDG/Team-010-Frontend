@@ -15,7 +15,7 @@ import Select from '../../components/Select';
 
 export default () => (
   <Main style={{ justifyContent: 'center', alignItems: 'center' }}>
-    <NavigationHeader>  </NavigationHeader>
+    <NavigationHeader> </NavigationHeader>
     <Stack style={{ minWidth: '50px', minHeight: '50px' }}>
       <Row
         style={{
@@ -222,7 +222,7 @@ export default () => (
           </Link>
         </Row>
       </Stack>
-      <NavigationFooter>  </NavigationFooter>
+      <NavigationFooter> </NavigationFooter>
     </Stack>
   </Main>
 );
