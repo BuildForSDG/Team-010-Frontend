@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Paragraph from '../Paragraph';
 import Row from '../Row';
-import { Link } from 'react-router-dom';
 import Stack from '../Stack';
 import { Footer } from './styles';
 

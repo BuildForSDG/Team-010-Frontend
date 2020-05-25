@@ -154,7 +154,7 @@ export default () => (
             minHeight: '50px'
           }}
         >
-          <Link to="">
+          <Link to="/">
             <Card
               style={{
                 justifyContent: 'flex-start',
@@ -176,7 +176,7 @@ export default () => (
               <Paragraph>Price</Paragraph>
             </Card>
           </Link>
-          <Link to="">
+          <Link to="/">
             <Card
               style={{
                 justifyContent: 'flex-start',
