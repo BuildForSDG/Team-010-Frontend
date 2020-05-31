@@ -14,6 +14,8 @@ export default () => (
         <Link to="/login">
           <Button>Login</Button>
         </Link>
+            <a href="/login">SignIn</a>
+            <a href="/market">Market Place</a>
     </Stack>
   </Main>
 );
