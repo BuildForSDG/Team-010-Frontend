@@ -10,13 +10,13 @@ export default () => (
   <Main style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
     <Stack style={{ justifyContent: 'flex-start', flexGrow: '0', minWidth: '50px', minHeight: '50px' }}>
       {/* <Row style={{ justifyContent: 'flex-start', flexGrow: '0', minWidth: '50px', minHeight: '50px' }}> */}
-        <Paragraph>Welcome to FarmHub</Paragraph>
-        <Link to="/login">
-          <Button>Login</Button>
-        </Link>
-            <a href="/login">SignIn</a>
-            <hr></hr>
-            <a href="/market">Market Place</a>
+      <Paragraph>Welcome to FarmHub</Paragraph>
+      <Link to="/login">
+        <Button>Login</Button>
+      </Link>
+      <a href="/login">SignIn</a>
+      <hr/>
+      <a href="/market">Market Place</a>
     </Stack>
   </Main>
 );
