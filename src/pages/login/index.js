@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Button from '../../components/button';
 import Image from '../../components/Image';
 import Main from '../../components/Main';
@@ -16,7 +15,7 @@ export default () => (
     </Row>
     <Stack style={{ minWidth: '50%' }}>
       <Row>
-        <Title>Log Into Your Account</Title>
+        <Title> Log Into Your Account </Title>
       </Row>
 
       <Row>
