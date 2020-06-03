@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.brand-container{
+  margin-left: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-container{
+    align-items: center;
+}
+
+.links-container ul li{
+    margin: .5rem;
+}
