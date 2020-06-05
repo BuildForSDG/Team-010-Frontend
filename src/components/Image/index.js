@@ -1,9 +1,5 @@
 import React from 'react';
 
-import {
-  Image,
-} from './styles';
+import { Image } from './styles';
 
-export default (props) => (
-  <Image style={props.style} />
-);
+export default (props) => <Image style={props.style} />;

@@ -1,9 +1,5 @@
 import React from 'react';
 
-import {
-  Icon,
-} from './styles';
+import { Icon } from './styles';
 
-export default (props) => (
-  <Icon style={props.style} className={`fa fa-${props.liga}`} />
-);
+export default (props) => <Icon style={props.style} className={`fa fa-${props.liga}`} />;

@@ -1,10 +1,6 @@
 import React from 'react';
 
-import {
-  Toggle,
-  Input,
-  Label,
-} from './styles';
+import { Toggle, Input, Label } from './styles';
 
 export default (props) => (
   <Label style={props.style}>
