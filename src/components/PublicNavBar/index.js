@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import Button from '../button';
 import './index.css';
 import { Link } from 'react-router-dom';
 
@@ -16,13 +16,13 @@ export default () => (
       <li>
         <ul>
           <li>
-            <Link to="/">Market</Link>
+            <Link to="/market">Market</Link>
           </li>
           <li>
-            <Link to="/login">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li>
-            <Link to="/login">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </li>

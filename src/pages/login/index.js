@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../../components/Button';
+import Button from '../../components/button';
 import Image from '../../components/Image';
 import Main from '../../components/Main';
 import Paragraph from '../../components/Paragraph';
