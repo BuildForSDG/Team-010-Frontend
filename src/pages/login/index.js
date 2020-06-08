@@ -15,7 +15,10 @@ export default () => (
     </Row>
     <Stack style={{ minWidth: '50%' }}>
       <Row>
-        <Title> <h1>Log Into Your Account</h1> </Title>
+        <Title>
+          {' '}
+          <h2>Log Into Your Account</h2>{' '}
+        </Title>
       </Row>
 
       <Row>

@@ -9,3 +9,5 @@ export const Select = Styled.select`
   font-size: 14px;
  
 `;
+
+export const bar = 'bar';
