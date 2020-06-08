@@ -6,7 +6,7 @@ import App from '../App';
 describe('Index test', () => {
   it('renders learn react link', () => {
     const { getByText } = render(<App />);
-    const h1 = getByText(/Log Into Your Account/i);
-    expect(h1).toBeInTheDocument();
+    const h2 = getByText(/Log Into Your Account/i);
+    expect(h2).toBeInTheDocument();
   });
 });
