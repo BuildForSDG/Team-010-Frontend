@@ -5,9 +5,8 @@ import Row from '../Row';
 import Stack from '../Stack';
 import { Footer } from './styles';
 
-export default ({ children, ...props }) => (
-  <Footer style={props.style}>
-    {children}
+export default ({ style }) => (
+  <Footer style={style}>
     <Row>
       <Stack>
         <Link to="/">
