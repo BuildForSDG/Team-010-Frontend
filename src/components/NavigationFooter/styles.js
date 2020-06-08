@@ -13,4 +13,5 @@ export const Footer = Styled.div`
   box-shadow: orange;
   background-color: green;
 `;
+
 export const bar = 'bar';

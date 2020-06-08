@@ -9,9 +9,8 @@ import Icon from '../Icon';
 
 import { Header } from './styles';
 
-export default ({ children, ...props }) => (
-  <Header style={props.style}>
-    {children}
+export default ({ style }) => (
+  <Header style={style}>
     <Row style={{ flexGrow: '0', minWidth: '50px', minHeight: '50px' }}>
       <Link to="/">
         <Image

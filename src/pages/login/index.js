@@ -15,7 +15,7 @@ export default () => (
     </Row>
     <Stack style={{ minWidth: '50%' }}>
       <Row>
-        <Title> Log Into Your Account </Title>
+        <Title> <h1>Log Into Your Account</h1> </Title>
       </Row>
 
       <Row>
